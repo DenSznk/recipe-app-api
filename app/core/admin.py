@@ -10,7 +10,7 @@ from core import models
 
 class UserAdmin(BaseUserADmin):
     """Define the admin page."""
-    ordering =  ['id']
+    ordering = ['id']
     list_display = ['email', 'name']
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
