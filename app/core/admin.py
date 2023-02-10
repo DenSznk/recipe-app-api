@@ -1,15 +1,15 @@
 """
-Django admin costamization.
+Django admin customization.
 """
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin as BaseUserADmin
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
 
 from core import models
 
 
-class UserAdmin(BaseUserADmin):
-    """Define the admin page."""
+class UserAdmin(BaseUserAdmin):
+    """Define the admin pages for users."""
     ordering = ['id']
     list_display = ['email', 'name']
     fieldsets = (
