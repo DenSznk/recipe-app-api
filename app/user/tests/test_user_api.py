@@ -66,7 +66,7 @@ class PublicUserApiTests(TestCase):
         ).exists()
         self.assertFalse(user_exists)
 
-    def rest_create_token_for_user(self):
+    def test_create_token_for_user(self):
         """Test generates token for vali creadentials."""
         user_details = {
             'name': 'Test Name',
